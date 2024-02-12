@@ -5,7 +5,7 @@ import pandas as pd
 import joblib
 
 # Load the trained RandomForest model
-model = joblib.load("P:/PoseDetector/my-vue-app/src/api/new_model_withhip.h5")
+model = joblib.load("C:/Users/uaudi/Desktop/pose/PoseDetector/src/api/new_model_withhip.h5")
 
 # Define a dictionary to convert model output to human-readable labels
 label_dict = {0: "Correct", 1: "Too High", 2: "Too Low"}
