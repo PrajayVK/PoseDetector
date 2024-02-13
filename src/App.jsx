@@ -23,12 +23,7 @@ function App() {
     <section id = "sec1">
       <div>
         
-        <div class = "login">
-        <button type = "button" class = "login-btn" style = {{fontSize: "16px", fontWeight: "bold"}}>About</button>
-        </div>
-        <div class = "signup">
-        <button type = "button" class = "signup-btn"style = {{fontSize: "16px", fontWeight: "bold"}}>Contact Us</button>
-        </div>
+        
         <h1 style = {{fontSize: "80px"}}>RepRight</h1>
         <p style = {{color: "rgba(255, 179, 64, 1)", fontSize: "25px"}}>Ai assissted gym form correction</p>
         <a href= "#sec2">
