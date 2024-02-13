@@ -2,6 +2,9 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import bg from "./assets/bg.png"
+import squat from "./assets/squat.jpeg"
+import "./App.css"
 
 
 function App() {
@@ -34,11 +37,28 @@ function App() {
         </a>
        </div>
     </section>
-    <section id = "sec2" >
+    <section id = "sec2">
       <div class = "container">
-        <h1>Let's Get Started!  </h1>
-        <ul>button1</ul>
-        <ul>button2</ul>
+        <h1 style = {{padding: "2px", fontSize:"40px"}}>Let's Get Started!</h1>
+        <div class = "squats">
+          <div class = "sq-overlay">
+            <button onClick={() => handleRunScript("test")} class = "sq-button">Squats</button>
+          </div> 
+          <img class = "sq-image" src = {bg} alt = "squat image"/>   
+        </div> 
+        <div class = "planks">
+          <div class="sq-overlay">
+            <button onClick={() => handleRunScript("plank")} class = "sq-button">Planks</button>
+          </div>
+          <img class = "sq-image" src = {bg} alt = "plank image"/>
+        </div>
+        <div class = "pushups">
+          <div class="sq-overlay">
+            <button onClick={() => handleRunScript("pushup")} class = "sq-button">Pushups</button>
+          </div>
+          <img class = "sq-image" src = {bg} alt = "plank image"/>
+        </div>
+        {/* <pre>{output}</pre> */}
       </div>
     </section>
       
