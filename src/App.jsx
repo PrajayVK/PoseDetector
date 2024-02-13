@@ -24,10 +24,10 @@ function App() {
       <div>
         
         <div class = "login">
-        <button type = "button" class = "login-btn" style = {{fontSize: "14px"}}>Login</button>
+        <button type = "button" class = "login-btn" style = {{fontSize: "16px", fontWeight: "bold"}}>About</button>
         </div>
         <div class = "signup">
-        <button type = "button" class = "signup-btn"style = {{fontSize: "14px", color: "black"}}>Sign Up</button>
+        <button type = "button" class = "signup-btn"style = {{fontSize: "16px", fontWeight: "bold"}}>Contact Us</button>
         </div>
         <h1 style = {{fontSize: "80px"}}>RepRight</h1>
         <p style = {{color: "rgba(255, 179, 64, 1)", fontSize: "25px"}}>Ai assissted gym form correction</p>
@@ -39,7 +39,7 @@ function App() {
     </section>
     <section id = "sec2">
       <div class = "container">
-        <h1 style = {{padding: "2px", fontSize:"40px"}}>Let's Get Started!</h1>
+        <h1 style = {{padding: "2px", fontSize:"40px"}}>CHOOSE EXERCISE</h1>
         <div class = "squats">
           <div class = "sq-overlay">
             <button onClick={() => handleRunScript("test")} class = "sq-button">Squats</button>

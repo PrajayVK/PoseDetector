@@ -1,5 +1,6 @@
 #root {
-  max-width: 1280px;
+  max-width: 100%;
+  overflow-x: hidden;
   margin: 0 auto;
   padding: 0;
   text-align: center;
@@ -63,10 +64,10 @@ p{
 }
 .login{
   height: 30px;
-  width: 70px;
+  width: 110px;
   border: 2px solid rgb(255, 179, 64);
   position: absolute;
-  left: 85%;
+  left: 82%;
   top: 15px;
   border-radius: 0px;
   
@@ -81,13 +82,13 @@ p{
 }
 .signup{
   height: 30px;
-  width: 75px;
+  width: 110px;
   border: 2px solid rgb(255, 179, 64);
   position: absolute;
   left: 91%;
   top: 15px;
   border-radius: 0px;
-  background-color:  rgb(255, 179, 64);
+  /* background-color:  rgb(255, 179, 64); */
   
 }
 .signup-btn{
