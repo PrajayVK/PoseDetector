@@ -3,16 +3,17 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import bg from "./assets/bg.png"
-import squat from "./assets/squat.jpeg"
+import squat from "./assets/squat_website.jpg"
+import pushup from "./assets/pushup_website.jpg"
+import barbellrow from "./assets/barbellrow_website.jpg"
 import "./App.css"
 
 
 function App() {
   const [output, setOutput] = useState("");
 
-  const handleRunScript = () => {
-    // Replace this URL with your Flask server's endpoint
-    fetch("http://localhost:5000/run-script")
+  const handleRunScript = (scriptName) => {
+    fetch(`http://localhost:5000/run-script?script=${scriptName}`)
       .then((response) => response.json())
       .then((data) => setOutput(data.message))
       .catch((error) => console.error("Error:", error));
@@ -39,19 +40,19 @@ function App() {
           <div class = "sq-overlay">
             <button onClick={() => handleRunScript("test")} class = "sq-button">Squats</button>
           </div> 
-          <img class = "sq-image" src = {bg} alt = "squat image"/>   
+          <img class = "sq-image" src = {squat} alt = "squat image"/>   
         </div> 
         <div class = "planks">
           <div class="sq-overlay">
-            <button onClick={() => handleRunScript("plank")} class = "sq-button">Planks</button>
+            <button onClick={() => handleRunScript("pushups")} class = "sq-button">Push Up</button>
           </div>
-          <img class = "sq-image" src = {bg} alt = "plank image"/>
+          <img class = "sq-image" src = {pushup} alt = "push up image"/>
         </div>
         <div class = "pushups">
           <div class="sq-overlay">
-            <button onClick={() => handleRunScript("pushup")} class = "sq-button">Pushups</button>
+            <button onClick={() => handleRunScript("barbellrow")} class = "sq-button">Barbell Row</button>
           </div>
-          <img class = "sq-image" src = {bg} alt = "plank image"/>
+          <img class = "sq-image" src = {barbellrow} alt = "barbellrow image"/>
         </div>
         {/* <pre>{output}</pre> */}
       </div>

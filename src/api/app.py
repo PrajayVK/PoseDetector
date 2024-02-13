@@ -1,13 +1,13 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 import subprocess
 
 app = Flask(__name__)
 
 @app.route('/run-script')
 def run_script():
+    script_name = request.args.get('script')  # Get the script name from the query string
     try:
-        # Replace 'your_script.py' with the path to your Python script
-        output = subprocess.check_output(['python', 'C:/Users/uaudi/Desktop/pose/PoseDetector/src/api/test.py'])
+        output = subprocess.check_output(['python', f'src/api/{script_name}.py'])
         return jsonify(message=output.decode('utf-8'))
     except subprocess.CalledProcessError as e:
         return jsonify(message=str(e))

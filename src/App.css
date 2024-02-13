@@ -4,6 +4,13 @@
   margin: 0 auto;
   padding: 0;
   text-align: center;
+  /* Colors */
+  --brand-color: hsl(46, 100%, 50%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  /* Fonts */
+  --font-title: "Montserrat", sans-serif;
+  --font-text: "Lato", sans-serif;
 }
 html{
   scroll-behavior: smooth;
@@ -31,8 +38,6 @@ p{
   
 }
 #sec2{
-  background-color: white;
-  color: rgba(36, 50, 65, 1) ;
   width: 100vw;
   min-height: 100vh;
   justify-content: center;
